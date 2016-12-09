@@ -19,9 +19,9 @@ once they’re out of the system. Our goal, is to make getting those metrics min
 ## Overview
 There are three layers of metrics identified in DC/OS: 
 
-  * Host metrics are metrics about the specific node which is part of the DC/OS cluster. 
-  * Container metrics are metrics regarding cgroup allocations from tasks running in Mesos or Docker containerizers. 
-  * Application metrics are metrics which are part of a specific application running inside a Mesos or Docker containerizer.
+  * Host: metrics about the specific node which is part of the DC/OS cluster. 
+  * Container: metrics about cgroup allocations from tasks running in Mesos or Docker containerizers. 
+  * Application: metrics about a specific application running inside a Mesos or Docker containerizer.
 
 The first API that we’ll be building for DC/OS metrics is an HTTP API which is capable of exposing these three core
 areas. Further development will include a DataDog-style StatsD "exhaust" or exports of metrics for other metrics stacks.
